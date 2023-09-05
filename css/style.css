@@ -263,11 +263,11 @@ input {
 }
 @media (max-width: 991px) {
   .inputContainer input {
-    width: 400px;
+    width: 300px;
     margin-inline: auto;
   }
   .inputContainer {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 .alertName,
