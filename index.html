@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="con d-none"> -->
+    <div class="lds-roller position-fixed w-100 h-100 start-50 top-50">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <aside class="fixed-top d-flex justify-content-center align-content-center">
+      <div class="anim1 d-flex flex-column justify-content-between py-4 ps-3">
+        <div class="links">
+          <span id="Search">Search </span>
+
+          <span id="Categories">Categories </span>
+          <span id="Area">Area </span>
+          <span id="Ingredients">Ingredients</span>
+          <span id="Contact">Contact Us </span>
+        </div>
+
+        <div class="navFooter d-flex flex-column row-gap-2">
+          <div class="icos">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <span class="copyright">Copyright © 2019 All Rights Reserved.</span>
+        </div>
+      </div>
+
+      <div
+        class="anim2 d-flex flex-column justify-content-between align-items-center py-4"
+      >
+        <div class="logoContainer">
+          <img src="logo.png" alt="" style="width: 50px" />
+        </div>
+
+        <div class="iconContainer text-center">
+          <i
+            class="fa-solid open-close-icon fa-align-justify fa-2x"
+            id="barsIcon"
+          ></i>
+        </div>
+
+        <div class="iconsContainer text-center">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+
+    <section id="randomMeals"></section>
+
+    <section id="categories" class="d-none"></section>
+
+    <section id="customClick" class="d-none p-5"></section>
+
+    <section id="categoryClick" class="d-none"></section>
+
+    <section id="areaClick" class="d-none"></section>
+
+    <section id="ingredientClick" class="d-none"></section>
+
+    <section id="area" class="d-none"></section>
+    <section id="ingredient" class="d-none"></section>
+
+    <section id="search" class="d-none">
+      <div class="inputContainer my-5 wow bounceInLeft text-center">
+        <input
+          type="text"
+          id="searchName"
+          class="form-control"
+          placeholder="Search By Name"
+        />
+        <input
+          type="text"
+          id="searchFirstLetter"
+          class="form-control"
+          placeholder="Search By First Letter"
+        />
+      </div>
+      <div id="searchDiv"></div>
+    </section>
+    <section id="contact" class="d-none column-gap-4 my-5">
+      <div class="inpName d-flex flex-column">
+        <input
+          type="text"
+          id="inputName"
+          class="form-control"
+          placeholder="Enter Your Name"
+        />
+
+        <span class="alert alert-danger mt-1 p-2 alertName"></span>
+      </div>
+      <div class="inpEmail d-flex flex-column">
+        <input
+          type="text"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Enter Your Email"
+        />
+        <span class="alert alert-danger mt-1 p-2 alertEmail"></span>
+      </div>
+      <div class="inpPhone">
+        <input
+          type="text"
+          id="inputPhone"
+          class="form-control"
+          placeholder="Enter Your Phone"
+        />
+        <span class="alert alert-danger mt-1 p-2 alertPhone"></span>
+      </div>
+      <div class="inpAge">
+        <input
+          type="text"
+          id="inputAge"
+          class="form-control"
+          placeholder="Enter Your Age"
+        />
+        <span class="alert alert-danger mt-1 p-2 alertAge"></span>
+      </div>
+      <div class="inpPass">
+        <input
+          type="password"
+          id="inputPass"
+          class="form-control"
+          placeholder="Enter Your Password"
+        />
+        <span class="alert alert-danger mt-1 p-2 alertPass"></span>
+      </div>
+      <div class="inpRepeatPass">
+        <input
+          type="password"
+          id="inputRepeatPass"
+          class="form-control"
+          placeholder="Repeat Your Password"
+        />
+        <span class="alert alert-danger mt-1 p-2 alertRepeatPass"></span>
+      </div>
+      <button class="btn btn-danger" id="submitButton" disabled>Submit</button>
+    </section>
+    <!-- </div> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
